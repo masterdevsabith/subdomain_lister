@@ -8,7 +8,7 @@ def find_subdomain(url):
     count = 0
     with open('db/available_subdomain.txt', 'r+') as delete_this:
         delete_this.truncate()
-    with open('data/subdomain_list.txt', 'r') as file:
+    with open('data/subdomain_small_list.txt', 'r') as file:
         for line in file:
             try:
                 sub = line.strip()
